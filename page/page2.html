@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+"http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <math xmlns="http://www.w3.org/1998/Math/MathML"></math>
+  <link rel="stylesheet" href="../css/style3.css">
+  <title>Метод Лагранжа и Бернулли</title>
+</head>
+<body>
+    <div class = "block">
+        <h2>Метод вариации произвольной постоянной. (Метод Лагранжа)</h2>
+        <p>Покажем применение метода на том же примере.</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mi>x</mi>
+            <msup>
+              <mi>y</mi>
+              <mo>&#x2032;</mo>
+            </msup>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>2</mn>
+            <mi>y</mi>
+            <mo>=</mo>
+            <mn>2</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msup>
+                <mi>x</mi>
+                <mn>4</mn>
+              </msup>
+            </mrow>
+          </math>
+          <p>Сначала решаем данное уравнение без правой части:</p>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mtable rowspacing="3pt" columnspacing="1em" displaystyle="true">
+              <mtr>
+                <mtd>
+                  <mi>x</mi>
+                  <msup>
+                    <mi>y</mi>
+                    <mo>&#x2032;</mo>
+                  </msup>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>2</mn>
+                  <mi>y</mi>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>x</mi>
+                      <mn>4</mn>
+                    </msup>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>x</mi>
+                  <mfrac>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>d</mi>
+                      <mi>y</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>d</mi>
+                      <mi>x</mi>
+                    </mrow>
+                  </mfrac>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                  <mi>y</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>x</mi>
+                  <msup>
+                    <mi>y</mi>
+                    <mo>&#x2032;</mo>
+                  </msup>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>2</mn>
+                  <mi>y</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mfrac>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>d</mi>
+                      <mi>y</mi>
+                    </mrow>
+                    <mi>y</mi>
+                  </mfrac>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                  <mfrac>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>d</mi>
+                      <mi>x</mi>
+                    </mrow>
+                    <mi>x</mi>
+                  </mfrac>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>ln</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mi>y</mi>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                  <mi>ln</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mi>x</mi>
+                  <mo>+</mo>
+                  <mi>ln</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mi>C</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>y</mi>
+                  <mo>=</mo>
+                  <mi>C</mi>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>x</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+          </math>
+          <p>Пусть C=C(x)C=C(x) - некоторая неизвестная функция в исходном уравнении, тогда</p>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mtable rowspacing="3pt" columnspacing="1em" displaystyle="true">
+              <mtr>
+                <mtd>
+                  <mi>y</mi>
+                  <mo>=</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>x</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mi>C</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msup>
+                    <mi>y</mi>
+                    <mo>&#x2032;</mo>
+                  </msup>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                  <mi>x</mi>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mi>C</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>x</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <msup>
+                    <mi>C</mi>
+                    <mo>&#x2032;</mo>
+                  </msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+          </math>
+          <p>Подставляем в исходное уравнение</p>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mtable rowspacing="3pt" columnspacing="1em" displaystyle="true">
+              <mtr>
+                <mtd>
+                  <mi>x</mi>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mn>2</mn>
+                  <mi>x</mi>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mi>C</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>+</mo>
+                  <mi>x</mi>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>x</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <msup>
+                    <mi>C</mi>
+                    <mo>&#x2032;</mo>
+                  </msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>x</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <mi>C</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>x</mi>
+                      <mn>4</mn>
+                    </msup>
+                  </mrow>
+                  <mrow>
+                    <mo>|</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>&#x00F7;<!-- ÷ --></mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <msup>
+                              <mi>x</mi>
+                              <mn>2</mn>
+                            </msup>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo fence="true" stretchy="true"></mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>2</mn>
+                  <mi>C</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>+</mo>
+                  <mi>x</mi>
+                  <mo>&#x22C5;<!-- ⋅ --></mo>
+                  <msup>
+                    <mi>C</mi>
+                    <mo>&#x2032;</mo>
+                  </msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>2</mn>
+                  <mi>C</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>x</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msup>
+                    <mi>C</mi>
+                    <mo>&#x2032;</mo>
+                  </msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                  <mi>x</mi>
+                  <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                  <mi>C</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mo>&#x222B;<!-- ∫ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                    <mi>x</mi>
+                    <mi>d</mi>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <msup>
+                        <mi>x</mi>
+                        <mn>2</mn>
+                      </msup>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mi>C</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+          </math>
+          <p>Подставляем полученное выражение в y=x2⋅C(x)y=x2⋅C(x) и получает окончательное решение y=x2⋅(x2+C)</p>
+          <h2>Уравнение Бернулли.</h2>
+          <p>Общий вид уравнения:</p>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <msup>
+              <mi>y</mi>
+              <mo>&#x2032;</mo>
+            </msup>
+            <mo>+</mo>
+            <mi>P</mi>
+            <mrow>
+              <mo>(</mo>
+              <mi>x</mi>
+              <mo>)</mo>
+            </mrow>
+            <mi>y</mi>
+            <mo>=</mo>
+            <mi>Q</mi>
+            <mrow>
+              <mo>(</mo>
+              <mi>x</mi>
+              <mo>)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msup>
+                <mi>y</mi>
+                <mi>n</mi>
+              </msup>
+            </mrow>
+          </math>
+          <p>слева линейное выражение, а справа присутсвует множитель <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow class="MJX-TeXAtom-ORD">
+              <msup>
+                <mi>y</mi>
+                <mi>n</mi>
+              </msup>
+            </mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>=</mo>
+                <mi>c</mi>
+                <mi>o</mi>
+                <mi>n</mi>
+                <mi>s</mi>
+                <mi>t</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </math>. Умножим обе части на </p> <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mfrac>
+              <mn>1</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msup>
+                    <mi>y</mi>
+                    <mi>n</mi>
+                  </msup>
+                </mrow>
+              </mrow>
+            </mfrac>
+          </math>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mfrac>
+              <mn>1</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msup>
+                    <mi>y</mi>
+                    <mi>n</mi>
+                  </msup>
+                </mrow>
+              </mrow>
+            </mfrac>
+            <mfrac>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>d</mi>
+                <mi>y</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>d</mi>
+                <mi>x</mi>
+              </mrow>
+            </mfrac>
+            <mo>+</mo>
+            <mi>P</mi>
+            <mrow>
+              <mo>(</mo>
+              <mi>x</mi>
+              <mo>)</mo>
+            </mrow>
+            <mfrac>
+              <mn>1</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msup>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </mrow>
+            </mfrac>
+            <mo>=</mo>
+            <mi>Q</mi>
+            <mrow>
+              <mo>(</mo>
+              <mi>x</mi>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          <p>Применим подстановку,получим дифференциальное уравнение вида:</p>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mtable rowspacing="3pt" columnspacing="1em" displaystyle="true">
+              <mtr>
+                <mtd>
+                  <mfrac>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <msup>
+                        <mi>z</mi>
+                        <mo>&#x2032;</mo>
+                      </msup>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>1</mn>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mi>n</mi>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mfrac>
+                  <mo>+</mo>
+                  <mi>P</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mi>z</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mi>Q</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mfrac>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>d</mi>
+                      <mi>z</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>d</mi>
+                      <mi>x</mi>
+                    </mrow>
+                  </mfrac>
+                  <mo>+</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>n</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mi>P</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mi>z</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mi>Q</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>n</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+          </math>
+          <p>Это линейное уравнение I-го порядка, для его решения применяем, например, подстановку Бернулли.</p>
+         
+    </div>
+</body>
+</html>
