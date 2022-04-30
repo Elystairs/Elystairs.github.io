@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<garn>
+  <headp group="Клавіатура">
+    <name>Comfort 7090 Backlit USB Black</name>
+    <year>2019</year>
+    <developer>REAL-EL</developer>
+  </headp>
+  <headp group="Клавіатура">
+    <name>Starfall Outemu Blue (HTK-609)</name>
+    <year>2021</year>
+    <developer>Hator</developer>
+  </headp>
+  <headp group="Клавіатура">
+    <name>Alloy Core RGB (HX-KB5ME2-RU)</name>
+    <year>2019</year>
+    <developer>HyperX</developer>
+  </headp>
+  <headp group="Навушники">
+    <name> Kraken X Lite</name>
+    <year>2021</year>
+    <developer>Razer</developer>
+  </headp>
+  <headp group="Навушники">
+    <name>Hypergang EVO (HTA-810)</name>
+    <year>2021</year>
+    <developer>Hator</developer>
+  </headp>
+  <headp group="Навушники">
+    <name>Pro X Gaming Black</name>
+    <year>2020</year>
+    <developer>Logitech</developer>
+  </headp>
+  <headp group="Миші">
+    <name>Death Adder Essential</name>
+    <year>2019</year>
+    <developer>Razer</developer>
+  </headp>
+  <clothe group="Миші">
+    <name>Clutch GM11</name>
+    <year>2020</year>
+    <developer>MSI</developer>
+  </headp>  
+  <headp group="Миші">
+    <name>G102 Lightsync (910-005854) Lilac USB</name>
+    <year>2020</year>
+    <developer>Logitech</developer>
+  </headp>
+</garn>
