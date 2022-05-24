@@ -3,7 +3,7 @@
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	background-color: #ededed;
+	background: rgb(108, 114, 116);
 }
 
 .loader {
