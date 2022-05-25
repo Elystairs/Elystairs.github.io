@@ -86,3 +86,24 @@ body {
     width: calc(100% - 10px);
     height: calc(100% + 10px);
   }
+
+.ball {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  
+  offset-path: path('M10 80 Q 77.5 10, 145 80 T 280 80');
+  offset-distance: 0%;
+
+  animation: red-ball 2s linear alternate infinite;
+}
+
+@keyframes red-ball {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
